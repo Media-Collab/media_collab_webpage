@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import Typography from '@mui/material/Typography';
 import SearchAppBar from '../components/SearchAppBar';
@@ -42,15 +43,17 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a href="/" className={styles.card}>
-            <h2>Members &rarr;</h2>
+          <a className={styles.card}>
+	    <h2>Projects &rarr;</h2>
             <p>Meet the people behind the scenes.</p>
           </a>
-          <a href="https://github.com/Media-Collab" className={styles.card}>
+
+          <a className={styles.card}>
             <h2>Projects &rarr;</h2>
             <p>Explore all the projects that the group developed.</p>
           </a>
-          <a href="/" className={styles.card}>
+
+          <a className={styles.card}>
             <h2>Blog &rarr;</h2>
             <p>Discover about some tips, recommendations and experiences ours members.</p>
           </a>
@@ -83,7 +86,7 @@ export default function Home() {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src="/mediacollab_logo.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image src="/mediacollab_logo.svg" alt="Media Collab Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
