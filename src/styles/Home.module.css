@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 0rem;
 }
 
 .main {
@@ -45,15 +45,33 @@
   font-size: 4rem;
 }
 
+.info {
+  line-height: 1.15;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.info a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.info a:hover,
+.info a:focus,
+.info a:active {
+  text-decoration: underline;
+}
+
+
 .title,
 .description {
   text-align: center;
 }
 
 .description {
-  margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+  padding: 0 3rem;
 }
 
 .code {
