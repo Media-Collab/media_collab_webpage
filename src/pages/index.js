@@ -44,7 +44,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a className={styles.card}>
-	    <h2>Projects &rarr;</h2>
+	    <h2>Members &rarr;</h2>
             <p>Meet the people behind the scenes.</p>
           </a>
 
@@ -73,6 +73,13 @@ export default function Home() {
           <h3 className={styles.info}>Wednesday: <a>VideoGames</a> 1.00p.m.</h3>
           <h3 className={styles.info}>Thursday: <a>Mobile</a> 12.30p.m.</h3>
           <h3 className={styles.info}>In <a>Infolab</a> UAO</h3>
+        </Box>
+
+	<h1>Event ☄</h1> 
+	<Box  sx={{
+                display: 'grid', gridTemplateColumns: 'repeat(1, 1fr)'
+              }}>
+          <Image src="https://i.imgur.com/mkRqVl7.png" alt="Media Collab Event" width={490} height={720} />
         </Box>
         
             
