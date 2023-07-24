@@ -18,7 +18,7 @@ import {
   RefineThemedLayoutV2HeaderProps,
 } from "@refinedev/chakra-ui";
 import { useGetIdentity, useGetLocale } from "@refinedev/core";
-import { IconLanguage, IconMoon, IconSun } from "@tabler/icons";
+import { IconLanguage, IconMoon, IconSun } from "@tabler/icons-react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";

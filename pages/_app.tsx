@@ -4,10 +4,10 @@ import {
   ThemedLayoutV2,
   ThemedTitleV2,
 } from "@refinedev/chakra-ui";
-import { GitHubBanner, Refine } from "@refinedev/core";
+import { Refine } from "@refinedev/core";
 import { RefineKbar, RefineKbarProvider } from "@refinedev/kbar";
 import routerProvider, {
-  DocumentTitleHandler,
+  // DocumentTitleHandler,
   UnsavedChangesNotifier,
 } from "@refinedev/nextjs-router";
 import type { NextPage } from "next";
@@ -20,6 +20,8 @@ import { appWithTranslation, useTranslation } from "next-i18next";
 import { authProvider } from "src/authProvider";
 import { AppIcon } from "src/components/app-icon";
 import { supabaseClient } from "src/utility";
+// visuals
+import { IconHome, IconTestPipe } from "@tabler/icons-react";
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   noLayout?: boolean;
@@ -75,7 +77,14 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
                 name: "home",
                 list: "/home",
                 meta: {
-                  canDelete: true,
+                  icon: <IconHome />,
+                },
+              },
+              {
+                name: "test",
+                list: "/test",
+                meta: {
+                  icon: <IconTestPipe />,
                 },
               },
               {
@@ -107,7 +116,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
             {renderComponent()}
             <RefineKbar />
             <UnsavedChangesNotifier />
-            <DocumentTitleHandler />
+            {/* <DocumentTitleHandler /> */}
           </Refine>
         </ChakraProvider>
       </RefineKbarProvider>
